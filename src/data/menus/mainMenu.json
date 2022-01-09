@@ -1,22 +1,27 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "Vi söker",
+        "url": "/sökes/",
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Garaget",
+        "url": "/garaget/",
         "weight": 3
     },
     {
-        "name": "About",
-        "url": "/about/",
+        "name": "Om Oss",
+        "url": "/om-oss/",
         "weight": 4
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Kontakt",
+        "url": "/kontakt/",
         "weight": 5
+    },
+    {
+        "name": "Blogg",
+        "url": "/blog/",
+        "weight": 6
     }
 ]

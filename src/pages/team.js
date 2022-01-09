@@ -40,7 +40,7 @@ const Team = props => {
                 )}
                 <div className="team-meta">
                   <h2 className="team-name">{node.frontmatter.title}</h2>
-                  <p className="team-description">{node.frontmatter.jobtitle}</p>
+                  <p className="team-description">{node.frontmatter.descr}</p>
                   {node.frontmatter.linkedin && (
                     <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
                   )}
@@ -63,7 +63,7 @@ const Team = props => {
                 )}
                 <div className="team-meta">
                   <h2 className="team-name">{node.frontmatter.title}</h2>
-                  <p className="team-description">{node.frontmatter.jobtitle}</p>
+                  <p className="team-description">{node.frontmatter.descr}</p>
                   {node.frontmatter.linkedin && (
                     <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
                   )}
@@ -95,8 +95,7 @@ export const query = graphql`
             title
             promoted
             image
-            jobtitle
-            linkedinurl
+            descr
           }
         }
       }

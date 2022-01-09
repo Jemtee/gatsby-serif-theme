@@ -1,16 +1,31 @@
 [
   {
-    "title": "Free Consultation",
+    "title": "VW Typ 1",
     "description": "New clients recieve an obligation free consultation.",
     "image": "/images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Certified Accountants",
+    "title": "VW Typ 2",
     "description": "All members of our team are certified accountants.",
     "image": "/images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Tax Compliance",
+    "title": "VW Typ 3",
+    "description": "We stay up to date on the latest changes to the tax code.",
+    "image": "/images/features/noun_3d modeling_1885342.svg"
+  },
+  {
+    "title": "VW Typ 4",
+    "description": "New clients recieve an obligation free consultation.",
+    "image": "http://vwentusiasten.se/wp-content/uploads/2017/04/vw-type4.jpg"
+  },
+  {
+    "title": "VW T14, T34",
+    "description": "All members of our team are certified accountants.",
+    "image": "/images/features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Övrigt",
     "description": "We stay up to date on the latest changes to the tax code.",
     "image": "/images/features/noun_3d modeling_1885342.svg"
   }

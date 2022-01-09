@@ -36,6 +36,10 @@ class Header extends React.Component {
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
+            {/* added by A @9jan */}
+            <div id="fb-root"></div> 
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v12.0&appId=344495965644067&autoLogAppEvents=1" nonce="4UPdPBeJ"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/vwentusiasten/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vwentusiasten/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vwentusiasten/">vwentusiasten.se</a></blockquote></div>
           <Menu />
           <Hamburger toggleMenu={this.toggleMenu} />
         </div>
