@@ -1,7 +1,7 @@
 [build]
   publish = "public"
-  command = "npm run build"
+  command = "yarn build"
 
 [build.environment]
-  NODE_VERSION = "v14.15.1"
+  NODE_VERSION = "v14.17.1"
   RUBY_VERSION = "2.6.2"
