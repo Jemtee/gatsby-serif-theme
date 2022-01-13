@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-team-js",
+    "path": "/team/1968-buss-early-bay/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"VW Early Bay 1968"},"fields":{"slug":"/team/1968-buss-early-bay/"},"html":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</p>"}},"pageContext":{"id":"9bab0a09-88fd-5650-97bc-44771b3785ce"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

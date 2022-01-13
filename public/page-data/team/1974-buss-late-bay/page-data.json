@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-team-js",
+    "path": "/team/1974-buss-late-bay/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"VW Buss 1974"},"fields":{"slug":"/team/1974-buss-late-bay/"},"html":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</p>"}},"pageContext":{"id":"16690be0-ecdc-5524-ac79-9d6a2995b6f6"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

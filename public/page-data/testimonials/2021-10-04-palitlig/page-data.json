@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-testimonial-js",
+    "path": "/testimonials/2021-10-04-palitlig/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"Pålitlig"},"fields":{"slug":"/testimonials/2021-10-04-palitlig/"},"html":"<p>Mycket trevlig och pålitlig köpare.  Vi önskar honom all lycka till med köpet.</p>"}},"pageContext":{"id":"41b15170-29de-53f8-b45f-c18c1e9c57c4"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-testimonial-js",
+    "path": "/testimonials/2021-08-24-gunilla-nilsson/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"Tack!"},"fields":{"slug":"/testimonials/2021-08-24-gunilla-nilsson/"},"html":"<p>Christer tog sig tiden att guida mig för att hitta reservdelar till min pappas bubbla.</p>"}},"pageContext":{"id":"330c8c25-f6f6-554e-92b0-4d92619f4ac4"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

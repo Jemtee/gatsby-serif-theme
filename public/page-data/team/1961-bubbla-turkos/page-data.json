@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-team-js",
+    "path": "/team/1961-bubbla-turkos/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"VW Bubbla 1961"},"fields":{"slug":"/team/1961-bubbla-turkos/"},"html":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</p>"}},"pageContext":{"id":"92886426-8f84-50e4-8484-76f190d1a3f3"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

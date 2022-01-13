@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-testimonial-js",
+    "path": "/testimonials/2021-10-15-christer-du-ar-fantastisk/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"Christer, du är fantastisk!!"},"fields":{"slug":"/testimonials/2021-10-15-christer-du-ar-fantastisk/"},"html":"<p>Tack så oerhört mycket för hjälpen med VW-delarna. Fortsätt att vara den varma person du är och lycka till med dina projekt!</p>\n<p>Vänligen Martin</p>"}},"pageContext":{"id":"b3169442-b9ca-57af-86e1-768caca38cac"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

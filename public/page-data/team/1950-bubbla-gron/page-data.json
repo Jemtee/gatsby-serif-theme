@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-team-js",
+    "path": "/team/1950-bubbla-gron/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"VW Bubbla 1950"},"fields":{"slug":"/team/1950-bubbla-gron/"},"html":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</p>"}},"pageContext":{"id":"e35a8bce-8273-59b9-941a-0e9bf765b5d1"}},
+    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}
