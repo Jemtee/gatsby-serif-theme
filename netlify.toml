@@ -1,6 +1,6 @@
 [build]
   command = "yarn build && yarn export"
-  publish = "out"
+  publish = "public"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

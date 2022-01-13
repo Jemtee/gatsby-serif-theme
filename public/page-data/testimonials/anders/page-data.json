@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-testimonial-js",
-    "path": "/testimonials/anders/",
-    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"Smidig affär"},"fields":{"slug":"/testimonials/anders/"},"html":"<p>Köpte en växellåda av VWentusiasten som var sista delen jag behövde i min renovering. Tack!</p>"}},"pageContext":{"id":"b5efb3a1-86db-5c5a-ad04-9222e67e968d"}},
-    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}

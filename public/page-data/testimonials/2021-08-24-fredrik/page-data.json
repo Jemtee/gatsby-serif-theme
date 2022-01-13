@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-testimonial-js",
-    "path": "/testimonials/2021-08-24-fredrik/",
-    "result": {"data":{"markdownRemark":{"frontmatter":{"title":"Kunnig och vänlig"},"fields":{"slug":"/testimonials/2021-08-24-fredrik/"},"html":"<p>Väldigt nöjd. Christer hade inte vad jag sökte men han tog sig tid för att hjälpa mig med kontakter till de som hade.</p>"}},"pageContext":{"id":"d27000bb-33e1-5550-8d63-71da150433bc"}},
-    "staticQueryHashes": ["1820306268","1911626797","239876865","3041911663","4266893431","748283036","760941739"]}
