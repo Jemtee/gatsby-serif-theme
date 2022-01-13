@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call'; //remove later
 import ReCAPTCHA from "react-google-recaptcha";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 const Home = props => {
   const intro = props.data.intro;
