@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
