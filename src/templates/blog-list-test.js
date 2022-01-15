@@ -2,7 +2,7 @@
 // import { graphql } from 'gatsby';
 // import PostCard from '../components/post-card/post-card';
 // import Pagination from '../components/pagination/pagination';
-// import Layout from '../components/layout';
+// import Layout from '../components/Layout';
 // import SEO from '../components/seo';
 // import { BlogPostsWrapper } from './templates.style';
 
