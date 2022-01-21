@@ -81,7 +81,7 @@ const Team = props => {
 export const query = graphql`
   query TeamQuery {
     team: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/team\/.*/" } }
+      filter: { fileAbsolutePath: { regex: "/garaget\/.*/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

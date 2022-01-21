@@ -22,8 +22,8 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query {
-            services: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "content/services\/.*/" } }
+            sokes: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "content/sokes\/.*/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -58,8 +58,8 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-            team: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "content/team\/.*/" } }
+            garaget: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "content/garaget\/.*/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -100,7 +100,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `,
       ).then(result => {
-        result.data.services.edges.forEach(({ node }) => {
+        result.data.sokes.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/service.js');
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
@@ -120,7 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
         });
-        result.data.team.edges.forEach(({ node }) => {
+        result.data.garaget.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/team.js');
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,

@@ -50,7 +50,7 @@ const Services = props => {
 export const query = graphql`
   query ServicesQuery {
     services: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services\/.*/" } }
+      filter: { fileAbsolutePath: { regex: "/sokes\/.*/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -66,7 +66,7 @@ export const query = graphql`
         }
       }
     }
-    intro: markdownRemark(fileAbsolutePath: {regex: "/(services.md)/"}) {
+    intro: markdownRemark(fileAbsolutePath: {regex: "/(sokes.md)/"}) {
       html
       frontmatter {
         title
