@@ -97,6 +97,24 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            blog: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "content/post\/.*/" } }
+            ) {
+              edges {
+                node {
+                  id
+                  excerpt
+                  html
+                  frontmatter {
+                    title
+                    image
+                  }
+                  fields {
+                    slug
+                  }
+                }
+              }
+            }
           }
         `,
       ).then(result => {
@@ -121,7 +139,7 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
         result.data.garaget.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/team.js');
+          const component = path.resolve('src/templates/car.js');
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
             component,
@@ -132,6 +150,19 @@ exports.createPages = ({ graphql, actions }) => {
         });
         result.data.basic.edges.forEach(({ node }) => {
           let component = path.resolve('src/templates/basic.js');
+          if (node.frontmatter.template) {
+            component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
+          }
+          createPage({
+            path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
+            component,
+            context: {
+              id: node.id
+            }
+          });
+        });
+        result.data.blog.edges.forEach(({ node }) => {
+          let component = path.resolve('src/templates/blog-post-test.js');
           if (node.frontmatter.template) {
             component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
           }

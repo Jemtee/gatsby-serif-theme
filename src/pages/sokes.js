@@ -11,7 +11,6 @@ const Services = props => {
   return (
     <Layout bodyClass="page-services">
       <SEO title="Services" />
-
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
@@ -33,6 +32,11 @@ const Services = props => {
             <div key={edge.node.id} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
+                  {edge.node.frontmatter.thumb_image && (
+                    <div className="feature-image">
+                      <img src={edge.node.frontmatter.thumb_image} />
+                    </div>
+                  )}
                   <h2>
                     <Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
                   </h2>
@@ -62,6 +66,8 @@ export const query = graphql`
           }
           frontmatter {
             title
+            thumb_image
+            intro_image
           }
         }
       }

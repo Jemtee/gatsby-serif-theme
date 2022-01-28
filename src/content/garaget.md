@@ -2,7 +2,7 @@
 path: '/garaget'
 title: 'Garaget'
 intro_image: "http://vwentusiasten.se/wp-content/uploads/2015/04/VW.jpg"
-intro_image_absolute: true
+intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 

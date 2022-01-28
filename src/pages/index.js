@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Call from '../components/Call'; //remove later
+import Call from '../components/Call'; //remove later potentially
 import ReCAPTCHA from "react-google-recaptcha";
 // import Slider from "react-slick";
 
@@ -13,7 +13,7 @@ const Home = props => {
   const services = props.data.services.edges;
   const testimonials = props.data.testimonials.edges;
   const features = props.data.features.edges;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+  const introImageClasses = `intro-image`;
 
   return (
     <Layout bodyClass="page-home">
@@ -25,20 +25,23 @@ const Home = props => {
         />
       </Helmet>
 
+      {intro.frontmatter.intro_image && (
+        // <div className="col-12 col-md-12 col-lg-12 order-1 order-md-1">
+          <img
+            alt={intro.frontmatter.title}
+            className={introImageClasses}
+            src={intro.frontmatter.intro_image}
+          />
+        // </div>
+      )}
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            {intro.frontmatter.intro_image && (
-              <div className="col-12 col-md-12 col-lg-12 order-1 order-md-1">
-                <img
-                  alt={intro.frontmatter.title}
-                  className={introImageClasses}
-                  src={intro.frontmatter.intro_image}
-                />
-              </div>
-            )}
-            <div className="col-12 col-md-9 col-lg-9 order-2 order-md-2">
+            <div className="col-7 col-md-7 col-sm-7 order-1 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
+            </div>
+            <div className="col-5 col-md-5 col-sm-5 order-2 order-md-2">
+
               <Call showButton />
               <form
                 name="Contact Form"
@@ -49,51 +52,27 @@ const Home = props => {
               >
                 <input type="hidden" name="form-name" value="Contact Form" />
                 <div>
-                  <label>Your Email:</label>
-                  <input type="email" name="email" />
+                  <label>Email:</label>
+                  <input type="email" id="email" name="email" />
                 </div>
                 <div>
-                  <label>Message:</label>
-                  <textarea name="message" />
+                  <label>Telefon:</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div className="formMessageContainer">
+                  <label>Meddelande:</label>
+                  <textarea id="message" name="message" />
                 </div>
                 <br />
                 <ReCAPTCHA sitekey="6LcWEloUAAAAACEBAKA17nXUPDvPJ9crcrYhxdz3" />
-                <button type="submit">Send</button>
+                <button type="submit" className="button button-primary">
+                  Kontakta oss
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
-
-      {services.length > 0 && (
-        <div className="strip">
-          <div className="container pt-6 pb-6 pb-md-10">
-            <div className="row justify-content-start">
-              {services.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-4 mb-1">
-                  <div className="service service-summary">
-                    <div className="service-content">
-                      <h2 className="service-title">
-                        <Link to={node.fields.slug}>
-                          {node.frontmatter.title}
-                        </Link>
-                      </h2>
-                      <p>{node.excerpt}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-auto">
-                <Link className="button button-primary" to="/services/">
-                  View All Services
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       {testimonials.length > 0 && (
         <div className="strip">
@@ -156,9 +135,47 @@ const Home = props => {
         </div>
       )}
 
+      {services.length > 0 && (
+        <div className="strip">
+          <div className="container pt-6 pb-6 pb-md-10">
+          <h2 className="text-center">Vad vi söker</h2>
+            <div className="row justify-content-start">
+              {services.map(({ node }) => (
+                <div key={node.id} className="col-12 col-md-4 mb-1">
+                  <div className="service service-summary">
+                    <div className="service-content feature">
+                      {node.frontmatter.thumb_image && (
+                        <div className="feature-image">
+                          <img src={node.frontmatter.thumb_image} />
+                        </div>
+                      )}
+                      <h2 className="service-title">
+                        <Link to={node.fields.slug}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </h2>
+                      <p>{node.excerpt}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-auto">
+                <Link className="button button-primary" to="/sokes/">
+                  Se alla bilar vi söker
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+
       {features.length > 0 && (
         <div className="strip strip-grey">
           <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
+            <h2 className="text-center">Vad vi söker</h2>
             <div className="row justify-content-center">
               {features.map(({ node }) => (
                 <div key={node.id} className="col-12 col-md-6 col-lg-4 mb-2">
@@ -184,7 +201,7 @@ const Home = props => {
 export const query = graphql`
   query {
     services: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services\/.*/" } }
+      filter: { fileAbsolutePath: { regex: "/sokes\/.*/" } }
       sort: { fields: [frontmatter___weight], order: ASC }
       limit: 6
     ) {
@@ -192,6 +209,7 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            thumb_image
             title
             date(formatString: "DD MMMM YYYY")
           }

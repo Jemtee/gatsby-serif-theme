@@ -1,9 +1,13 @@
 ---
-title: "Tax Preparation"
+title: "Övrigt"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
-weight: 6
+weight: 5
+description: "Tempo, DKW, Porsche, Delar, Tillbehör …"
+thumb_image: "/images/features/vw-matador_1.jpeg"
+intro_image: "/images/features/vw-matador_1.jpeg"
+
 ---
 
 Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,

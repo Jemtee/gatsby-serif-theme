@@ -4,8 +4,8 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call';
 
-const Garaget = props => {
-  const car = props.data.car.edges;
+const BlogPage = props => {
+  const blog = props.data.post.edges;
   const { intro } = props.data;
   const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
@@ -30,7 +30,7 @@ const Garaget = props => {
 
       <div className="container">
         <div className="row">
-          {car.filter(edge => (edge.node.frontmatter.promoted)).map(({ node }) => (
+          {blog.filter(edge => (edge.node.frontmatter.promoted)).map(({ node }) => (
             <div key={node.id} className="col-12 col-md-6 mb-2">
               <Link to={node.fields.slug}>
                 <div className="team team-summary team-summary-large">
@@ -55,7 +55,7 @@ const Garaget = props => {
           ))}
         </div>
         <div className="row pt-6 pb-6">
-          {car.filter(edge => (!edge.node.frontmatter.promoted)).map(({ node }) => (
+          {blog.filter(edge => (!edge.node.frontmatter.promoted)).map(({ node }) => (
             <div key={node.id} className="col-12 col-md-6 mb-2">
               <Link to={node.fields.slug}>
                 <div className="team team-summary">
@@ -83,9 +83,9 @@ const Garaget = props => {
 };
 
 export const query = graphql`
-  query CarQuery {
-    car: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/garaget\/.*/" } }
+  query BlogPostQuery {
+    post: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/post\/.*/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -104,7 +104,7 @@ export const query = graphql`
         }
       }
     }
-    intro: markdownRemark(fileAbsolutePath: {regex: "/(garaget.md)/"}) {
+    intro: markdownRemark(fileAbsolutePath: {regex: "/(blog.md)/"}) {
       html
       frontmatter {
         image
@@ -117,4 +117,4 @@ export const query = graphql`
   }
 `;
 
-export default Garaget;
+export default BlogPage;

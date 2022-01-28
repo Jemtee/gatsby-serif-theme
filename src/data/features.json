@@ -1,32 +1,32 @@
 [
   {
     "title": "VW Typ 1",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "/images/features/noun_branding_1885335.svg"
+    "description": "Bubbla",
+    "image": "/images/features/vw-bug_1.jpeg"
   },
   {
     "title": "VW Typ 2",
-    "description": "All members of our team are certified accountants.",
-    "image": "/images/features/noun_The Process_1885341.svg"
+    "description": "Buss, Pickup",
+    "image": "/images/features/vw-bus_type_2.jpeg"
   },
   {
     "title": "VW Typ 3",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "/images/features/noun_3d modeling_1885342.svg"
+    "description": "Fastback, Notchback, Variant",
+    "image": "/images/features/vw-type-3.jpeg"
   },
   {
     "title": "VW Typ 4",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "http://vwentusiasten.se/wp-content/uploads/2017/04/vw-type4.jpg"
+    "description": "411, 412",
+    "image": "/images/features/vw-type4.jpeg"
   },
   {
     "title": "VW T14, T34",
-    "description": "All members of our team are certified accountants.",
-    "image": "/images/features/noun_The Process_1885341.svg"
+    "description": "Karmann Ghia",
+    "image": "/images/features/vw-karmann-ghia-type14.jpeg"
   },
   {
     "title": "Övrigt",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "/images/features/noun_3d modeling_1885342.svg"
+    "description": "Tempo, DKW, Porsche, Delar, Tillbehör …",
+    "image": "/images/features/vw-matador_1.jpeg"
   }
 ]

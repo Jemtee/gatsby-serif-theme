@@ -3,6 +3,9 @@ title: "Volkswagen Typ 2"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 weight: 1
+description: "Buss, Pickup"
+thumb_image: "/images/features/vw-bus_type_2.jpeg" 
+intro_image: ""
 ---
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.

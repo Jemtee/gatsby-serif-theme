@@ -3,6 +3,10 @@ title: "VW Karmann Ghia T14"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 weight: 1
+thumb_image: "/images/features/vw-karmann-ghia-type14.jpeg"
+intro_image: "/images/illustrations/vw-t14-karmann-ghia.jpeg"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
 ---
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
